@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  max-width: 1440px;
+  margin: 0 auto;
+  border: none;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-block-size: 100vh;
+}
+
+header,
+footer {
+  flex-shrink: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  border: none;
+  font: inherit;
+  background: none;
+  cursor: pointer;
+}
