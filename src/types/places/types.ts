@@ -1,3 +1,5 @@
+import type { IMeta } from "./meta/types"
+
 export interface IPlaceShort {
   id: string
   title: string
@@ -35,8 +37,13 @@ export interface IInfrastructure {
   pharmacy: boolean
 }
 
-export interface IPlacesResponse {
-  
+export interface IPlacesShortResponse {
+  meta: IMeta
+  data: IPlaceShort[]
+}
+
+export interface IPlacesFullResponse {
+  data: IPlaceFull[]
 }
 
 export type TRestType = 'city' | 'culture' | 'gastronomy' | 'beach' | 'family' | 'active' | 'nature' | 'extreme' | 'winter' | 'mountain' | 'roadtrip'

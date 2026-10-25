@@ -1,7 +1,7 @@
-export default function LandingPage() {
+export default function HomePage() {
   return (
     <>
-      <h1>Landing Page</h1>
+      <h1>Home Page</h1>
       <p>Страница в разработке</p>
     </>
   )

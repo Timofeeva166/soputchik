@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { lazy, Suspense } from 'react'
+import { lazy, Suspense, useEffect } from 'react'
 import { ROUTES } from '@/lib/constants'
+import { useAppDispatch } from '@/services/hooks'
+import { loadCatalog } from '@/services/slices/places/placesSlice'
 
 const CatalogPage = lazy(() => import('@/pages/CatalogPage'))
 const DashboardPage = lazy(() => import('@/pages/DashboardPage'))
@@ -16,6 +18,12 @@ const UsersPage = lazy(() => import('@/pages/UsersPage'))
 const NotFoundPage = lazy(() => import('@/pages/NotFoundPage'))
 
 export function AppRouter() {
+  const dispatch = useAppDispatch()
+
+  useEffect(() => {
+    dispatch(loadCatalog())
+  }, [dispatch])
+
   return (
     <BrowserRouter>
       <Suspense fallback={<p>Загрузка...</p>}>
