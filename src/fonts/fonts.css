@@ -1,0 +1,20 @@
+@font-face {
+  font-family: Inter;
+  src: url('Inter-Medium.otf'), format('otf');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Manrope;
+  src: url('Manrope.ttf'), format('ttf');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Lunna;
+  src: url('LUNNA.ttf'), format('ttf');
+  font-weight: normal;
+  font-display: swap;
+}

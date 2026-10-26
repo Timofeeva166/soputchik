@@ -6,7 +6,7 @@ export const ROUTES = {
   FAVOURITES: '/favourites',
   KANBAN: '/kanban',
   LOGIN: '/login',
-  PLACE: '/place:id',
+  PLACE: '/place/:id',
   PROFILE: '/profile',
   REGISTER: '/register',
   USERS: '/users'

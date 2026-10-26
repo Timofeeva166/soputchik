@@ -1,3 +1,11 @@
+@import url('../fonts/fonts.css');
+
+:root {
+  --font-manrope: Manrope, sans-serif;
+  --font-inter: Inter, sans-serif;
+  --font-lunna: Lunna, sans-serif;
+}
+
 *,
 *::before,
 *::after {
@@ -9,9 +17,10 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  max-width: 1440px;
+  max-width: 100vi;
   margin: 0 auto;
   border: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #root {

@@ -1,0 +1,26 @@
+.container {
+  padding: 15dvh 2vi 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  font-size: 90px;
+  font-family: var(--font-lunna);
+  letter-spacing: 5%;
+  line-height: 80%;
+  font-weight: 100;
+}
+
+.subtitle {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: var(--font-manrope);
+  font-weight: 100;
+}
